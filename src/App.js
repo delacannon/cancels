@@ -72,8 +72,8 @@ export default function App() {
           .map((e) => {
             return (
               <Grid
-                xs={6}
-                md={6}
+                xs={12}
+                md={4}
                 lg={3}
                 item
                 key={`${e['Referència'] - e['Descripció']}`}
