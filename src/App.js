@@ -27,7 +27,6 @@ const categories = [
   { name: 'Punteria', value: 'punteria' },
   { name: 'Música', value: 'música' },
   { name: 'Material escolar', value: 'material escolar' },
-  { name: 'Clauers', value: 'clauers' },
   { name: 'Estris de cuina', value: 'cuina' },
   { name: 'Labors', value: 'labors' },
 ];
@@ -39,7 +38,7 @@ export default function App() {
   return (
     <Container>
       <Typography variant="h4" marginTop={4}>
-        CATÀLEG CAN CEL
+        CATÀLEG CAN CELS
       </Typography>
       <Typography variant="caption" sx={{ color: 'teal' }}>
         LA FONT
