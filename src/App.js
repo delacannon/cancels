@@ -87,9 +87,10 @@ export default function App() {
                   <CardContent>
                     <Typography
                       gutterBottom
-                      variant="h3"
+                      variant="h6"
+                      component="h2"
                       sx={{ fontSize: 18 }}
-                      component="h3"
+                      noWrap
                     >
                       {e['Descripció']}
                     </Typography>
