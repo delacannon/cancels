@@ -72,7 +72,7 @@ export default function App() {
           .map((e) => {
             return (
               <Grid
-                xs={12}
+                xs={6}
                 md={4}
                 lg={3}
                 item
@@ -85,7 +85,12 @@ export default function App() {
                     title="Paella dish"
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h6" component="h2" noWrap>
+                    <Typography
+                      gutterBottom
+                      variant="h3"
+                      sx={{ fontSize: 18 }}
+                      component="h3"
+                    >
                       {e['Descripció']}
                     </Typography>
                     <Typography
