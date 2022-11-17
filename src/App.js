@@ -6,6 +6,8 @@ import {
   MenuItem,
   Card,
   Button,
+  CardHeader,
+  Avatar,
   Link,
   Divider,
   CardActions,
@@ -80,9 +82,9 @@ export default function App() {
                 item
                 key={`${e['Referència'] - e['Descripció']}`}
               >
-                <Card sx={{ maxHeight: 380 }} elevation={2}>
+                <Card sx={{ height: 350 }} elevation={2}>
                   <CardMedia
-                    sx={{ height: 128 }}
+                    sx={{ height: 150 }}
                     image={e['Imàtges']}
                     title="Paella dish"
                   />
@@ -110,6 +112,11 @@ export default function App() {
                     >
                       <b>Rèf:</b> {e['Referència']}
                     </Typography>
+                    <Box paddingTop={1}>
+                      <Typography variant="caption">
+                        {e['Descripció']}
+                      </Typography>
+                    </Box>
                   </CardContent>
                   <CardActions>
                     <Button size="small">
