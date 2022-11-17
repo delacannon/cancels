@@ -50,7 +50,7 @@ export default function App() {
           backgroundImage: `url(https://www.waldorflafont.org/wp-content/uploads/2019/03/logolafont-blau-512px-e1573652013614.png)`,
         }}
       />
-      <Typography variant="h5" marginTop={0}>
+      <Typography variant="h5" marginTop={0} sx={{ textAlign: 'center' }}>
         CATÀLEG CAN CELS
         <Divider />
       </Typography>
