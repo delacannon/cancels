@@ -5,7 +5,10 @@ import {
   Box,
   MenuItem,
   Card,
+  Button,
+  Link,
   Divider,
+  CardActions,
   TextField,
   CardMedia,
   Container,
@@ -109,6 +112,19 @@ export default function App() {
                       <b>Rèf:</b> {e['Referència']}
                     </Typography>
                   </CardContent>
+                  <CardActions>
+                    <Button size="small">
+                      <Link
+                        href={e['link']}
+                        target="_blank"
+                        rel="noopener"
+                        color="inherit"
+                        sx={{ textDecoration: 'none' }}
+                      >
+                        Veure més
+                      </Link>
+                    </Button>
+                  </CardActions>
                 </Card>
               </Grid>
             );
