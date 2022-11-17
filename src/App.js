@@ -73,7 +73,7 @@ export default function App() {
             return (
               <Grid
                 xs={6}
-                md={4}
+                md={6}
                 lg={3}
                 item
                 key={`${e['Referència'] - e['Descripció']}`}
