@@ -6,8 +6,8 @@ import {
   MenuItem,
   Card,
   Button,
-  CardHeader,
-  Avatar,
+  Stack,
+  InputAdornment,
   Link,
   Divider,
   CardActions,
@@ -35,18 +35,26 @@ const categories = [
 
 export default function App() {
   const [category, setCategory] = useState('tots');
+  const [text, setText] = useState('');
 
   console.log(category);
   return (
     <Container>
-      <Typography variant="h4" marginTop={4}>
+      <Box
+        width={128}
+        height={128}
+        margin="auto"
+        sx={{
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundImage: `url(https://www.waldorflafont.org/wp-content/uploads/2019/03/logolafont-blau-512px-e1573652013614.png)`,
+        }}
+      />
+      <Typography variant="h5" marginTop={0}>
         CATÀLEG CAN CELS
-      </Typography>
-      <Typography variant="caption" sx={{ color: 'teal' }}>
-        LA FONT
         <Divider />
       </Typography>
-      <Box marginTop={2}>
+      <Stack marginTop={2} spacing={1} direction="column">
         <TextField
           select
           name="selectCategory"
@@ -64,7 +72,7 @@ export default function App() {
             </MenuItem>
           ))}
         </TextField>
-      </Box>
+      </Stack>
 
       <Grid container spacing={2} marginTop={1}>
         {data
@@ -82,7 +90,14 @@ export default function App() {
                 item
                 key={`${e['Referència'] - e['Descripció']}`}
               >
-                <Card sx={{ height: 350 }} elevation={2}>
+                <Card
+                  sx={{
+                    maxHeight: 400,
+                    height: '100%',
+                    backgroundColor: '#e8eaf6',
+                  }}
+                  elevation={2}
+                >
                   <CardMedia
                     sx={{ height: 150 }}
                     image={e['Imàtges']}
