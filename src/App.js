@@ -133,7 +133,7 @@ export default function App() {
                       </Typography>
                     </Box>
                   </CardContent>
-                  <CardActions>
+                  {/*   <CardActions>
                     <Button size="small">
                       <Link
                         href={e['link']}
@@ -145,7 +145,7 @@ export default function App() {
                         Veure més
                       </Link>
                     </Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Card>
               </Grid>
             );
